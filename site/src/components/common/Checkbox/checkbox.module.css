@@ -1,0 +1,185 @@
+
+.checkbox-item {
+  display: inline-flex;
+  cursor: pointer;
+  transition: all .2s;
+  --primary-color: var(--color-dark-slate-blue);
+  --success-color: var(--color-asparagus);
+  --warning-color: var(--color-max-yellow);
+  --danger-color: var(--color-upsdell-red);
+  --border-outline-width: 1px;
+  --border-arrow-width: 2px;
+  --check-box-border-opacity: .6;
+  --check-box-border-opacity-hover: .4;
+  --check-box-opacity: .15;
+  --check-box-opacity-hover: .1;
+  --check-box-arrow-opacity: 1;
+  --check-box-arrow-opacity-hover: .7;
+}
+
+.checkbox-item span {
+  position: relative;
+}
+
+.checkbox-item span::before {
+  width: 50%;
+  height: 100%;
+  content: ' ';
+  position: absolute;
+  transition: all .2s;
+  transform: rotateZ(180deg);
+  top: -48%;
+  left: 54%;
+}
+/* , top: -height / 12, left: width / 6 */
+.checkbox-item.default {
+  border: var(--border-outline-width) solid rgb(var(--color-davys-grey));
+}
+
+.checkbox-item.default:hover {
+  border-color: rgba(var(--color-davys-grey), 0.6);
+}
+
+.checkbox-item.default.active {
+  background-color: rgba(var(--color-davys-grey), var(--check-box-opacity));
+}
+
+.checkbox-item.default.active:hover {
+  background-color: rgba(var(--color-davys-grey), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.default.active span::before {
+  transform: rotateZ(45deg);
+  top: -12%;
+  left: 26%;
+  border-bottom: var(--border-arrow-width) solid rgba(var(--color-davys-grey));
+  border-right: var(--border-arrow-width) solid rgba(var(--color-davys-grey));
+}
+
+.checkbox-item.primary {
+  border: var(--border-outline-width) solid rgba(var(--primary-color), var(--check-box-border-opacity));
+}
+
+.checkbox-item.primary:hover {
+  border-color: rgba(var(--primary-color), var(--check-box-border-opacity-hover));
+  background-color: rgba(var(--primary-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.primary.active {
+  border-color: rgba(var(--primary-color), var(--check-box-opacity));
+  background-color: rgba(var(--primary-color), var(--check-box-opacity));
+}
+
+.checkbox-item.primary.active:hover {
+  border-color: rgba(var(--primary-color), var(--check-box-opacity-hover));
+  background-color: rgba(var(--primary-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.primary.active span::before {
+  transform: rotateZ(45deg);
+  top: -12%;
+  left: 26%;
+  border-bottom: var(--border-arrow-width) solid rgba(var(--primary-color), var(--check-box-arrow-opacity));
+  border-right: var(--border-arrow-width) solid rgba(var(--primary-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.primary.active:hover span::before {
+  border-color: rgba(var(--primary-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.success {
+  border: var(--border-outline-width) solid rgba(var(--success-color), var(--check-box-border-opacity));
+}
+
+.checkbox-item.success:hover {
+  border-color: rgba(var(--success-color), var(--check-box-border-opacity-hover));
+  background-color: rgba(var(--success-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.success.active {
+  border-color: rgba(var(--success-color), var(--check-box-opacity));
+  background-color: rgba(var(--success-color), var(--check-box-opacity));
+}
+
+.checkbox-item.success.active:hover {
+  border-color: rgba(var(--success-color), var(--check-box-opacity-hover));
+  background-color: rgba(var(--success-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.success.active span::before {
+  transform: rotateZ(45deg);
+  top: -12%;
+  left: 26%;
+  border-bottom: var(--border-arrow-width) solid rgba(var(--success-color), var(--check-box-arrow-opacity));
+  border-right: var(--border-arrow-width) solid rgba(var(--success-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.success.active:hover span::before {
+  border-color: rgba(var(--success-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.warning {
+  border: var(--border-outline-width) solid rgba(var(--warning-color), var(--check-box-border-opacity));
+}
+
+.checkbox-item.warning:hover {
+  border-color: rgba(var(--warning-color), var(--check-box-border-opacity-hover));
+  background-color: rgba(var(--warning-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.warning.active {
+  border-color: rgba(var(--warning-color), var(--check-box-opacity));
+  background-color: rgba(var(--warning-color), var(--check-box-opacity));
+}
+
+.checkbox-item.warning.active:hover {
+  border-color: rgba(var(--warning-color), var(--check-box-opacity-hover));
+  background-color: rgba(var(--warning-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.warning.active span::before {
+  transform: rotateZ(45deg);
+  top: -12%;
+  left: 26%;
+  border-bottom: var(--border-arrow-width) solid rgba(var(--warning-color), var(--check-box-arrow-opacity));
+  border-right: var(--border-arrow-width) solid rgba(var(--warning-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.warning.active:hover span::before {
+  border-color: rgba(var(--warning-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.danger {
+  border: var(--border-outline-width) solid rgba(var(--danger-color), var(--check-box-border-opacity));
+}
+
+.checkbox-item.danger:hover {
+  border-color: rgba(var(--danger-color), var(--check-box-border-opacity-hover));
+  background-color: rgba(var(--danger-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.danger.active {
+  border-color: rgba(var(--danger-color), var(--check-box-opacity));
+  background-color: rgba(var(--danger-color), var(--check-box-opacity));
+}
+
+.checkbox-item.danger.active:hover {
+  border-color: rgba(var(--danger-color), var(--check-box-opacity-hover));
+  background-color: rgba(var(--danger-color), var(--check-box-opacity-hover));
+}
+
+.checkbox-item.danger.active span::before {
+  transform: rotateZ(45deg);
+  top: -12%;
+  left: 26%;
+  border-bottom: var(--border-arrow-width) solid rgba(var(--danger-color), var(--check-box-arrow-opacity));
+  border-right: var(--border-arrow-width) solid rgba(var(--danger-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.danger.active:hover span::before {
+  border-color: rgba(var(--danger-color), var(--check-box-arrow-opacity));
+}
+
+.checkbox-item.round {
+  border-radius: 35px;
+}

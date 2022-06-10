@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "concurrently 'cd sanity && sanity start'"
+  },
+  "devDependencies": {
+    "@sanity/cli": "^2.30.0",
+    "concurrently": "^7.2.1"
+  },
+  "name": "apple-montessori-schools",
+  "version": "1.0.0",
+  "description": "Apple Montessori Schools",
+  "main": "index.js",
+  "repository": "git@github.com:planetary/apple-montessori-schools.git",
+  "author": "Planetary Corporation",
+  "license": "UNLICENSED"
+}

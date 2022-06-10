@@ -1,0 +1,53 @@
+.image-container {
+    width: 33%;
+    background-color: #C4C4C4;
+}
+.body-container {
+    width: 67%;
+}
+h2.school-location-name {
+    font-family: "Lato";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-charcoal);
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+p.school-location-offerings {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+p.school-location-description {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-charcoal);
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+p.school-location-draw-item {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+p.school-location-draw-item.phone-item {
+    margin-bottom: 24px;
+}
+.button-list .button-list-item:not(:first-child) {
+    margin-left: 16px;
+}

@@ -1,0 +1,29 @@
+.image-container {
+  width: 45%;
+  background-color: #C4C4C4;
+}
+.body-container {
+  width: 55%;
+  padding-top: 34.5px;
+  padding-bottom: 34.5px;
+  padding-left: 32px;
+}
+.side-title {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444444;
+  margin-bottom: 8px;
+}
+.side-description {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444444;
+}

@@ -1,0 +1,39 @@
+.quote {
+    padding-top:80px;
+    padding-right: 140px;
+    padding-bottom: 81px;
+    padding-left: 140px;
+    border-radius: 8px;
+    background: rgb(var(--color-charcoal));
+}
+h2.quote-content {
+    font-family: "Lato";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+p.quote-author {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+p.quote-parent {
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+    color: #FFFFFF;
+}
